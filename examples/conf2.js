@@ -2,7 +2,7 @@
 exports.config = {
   // The address of a running selenium server.
   seleniumAddress: 'http://hub.browserstack.com/wd/hub',
-  specs: ['example_spec.js'],
+  specs: ['spec.js'],
 
 multiCapabilities: [
 {
@@ -33,15 +33,6 @@ multiCapabilities: [
     'os': 'Windows',
     'os_version': '7',
     'resolution': '1024x768',
-    'build':'Sample Protractor Tests',
-    'browserstack.debug' : 'true',
-    'browserstack.user': '',
-    'browserstack.key': ''
-},
-{
-    'browserName' : 'android',
-    'platform' : 'ANDROID',
-    'device': 'Samsung Galaxy S5',
     'build':'Sample Protractor Tests',
     'browserstack.debug' : 'true',
     'browserstack.user': '',

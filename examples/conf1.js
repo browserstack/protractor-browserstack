@@ -2,7 +2,7 @@
 exports.config = {
   // The address of a running selenium server.
   seleniumAddress: 'http://hub.browserstack.com/wd/hub',
-  specs: ['example_spec.js'],
+  specs: ['spec.js'],
 
 //Capabilities to be passed to the webdriver instance.
   capabilities: 
