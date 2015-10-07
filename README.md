@@ -1,5 +1,15 @@
 ## Usage
 
+### Prerequisites
+
+Node and npm
+
+### Clone this repo
+
+`git clone https://github.com/vedharish/protractor-browserstack.git`
+
+`cd protractor-browserstack`
+
 ### Install protractor
 
 `npm install -g protractor`
