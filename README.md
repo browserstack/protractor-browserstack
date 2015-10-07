@@ -25,7 +25,7 @@ These can be found on the automate accounts page on [BrowserStack](https://www.b
 
 ### Setting up local tunnel
 
-Download the BrowserStackLocal Binary as instructed [here](https://www.browserstack.com/automate/node#Setting%20up%20Local%20Testing). Run the binary locally.
+Download the BrowserStackLocal Binary as instructed [here](https://www.browserstack.com/automate/node#setting-local-tunnel). Run the binary locally.
 
 `path/to/BrowserStackLocal $BROWSERSTACK_KEY localhost,3000,0`
 
