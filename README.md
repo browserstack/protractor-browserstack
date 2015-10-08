@@ -1,34 +1,52 @@
 # Protractor-Browserstack
+
 Execute [Protractor](https://github.com/angular/protractor) scripts on BrowserStack. 
 
-##How to run
+## Usage
 
-- git clone `https://github.com/UmangSardesai/Protractor-Browserstack.git`
-- `cd Protractor-Browserstack`
-- `npm install Protractor`
-- Enter Username and Automate key in 'conf1.js' and 'conf2.js'
-- `cd examples` 
+For local testing, follow the instructions in `Local Testing/README`
 
-To execute the Protractor test on a single browser - OS combination on BrowserStack, execute the following command:
+### Prerequisites
 
-`protractor conf1.js`
+Node and npm
 
-###How to run in parallel
+[Latest `protractor` release requires node v0.12 and up](https://github.com/angular/protractor/issues/2588)
 
-To execute the test on differnt browser and OS combinations in parallel, you need to use `'multiCapabilities'` as given in conf2.js file. Then simply execute the command:
+### Install protractor
 
-`protractor conf2.js`
+`npm install -g protractor`
 
-###How to specify the capabilities
+### Clone the repo
 
-The [Code Generator](https://www.browserstack.com/automate/node#setting-os-and-browser) can come in very handy when specifying the capabilities especially for mobile devices. 
+`git clone https://github.com/browserstack/protractor-browserstack.git`
 
-However, users have been facing issues when specifying the 'browser' capablities. The general notation to be followed is:
+`cd protractor-browserstack`
 
-- For desktop browsers —> ‘browser’.
-- For mobile devices —> ‘browserName’.
+### BrowserSack Authentication
 
-Though ‘browserName’ capability also works for desktop, we recommend users to stick to the above mentioned capabilities.
+Export the environment variables for the username and access key of your BrowserStack account.
+These can be found on the automate accounts page on [BrowserStack](https://www.browserstack.com/accounts/automate)
 
-Coming to using Protractor, for the older version, tests work fine with the ‘browser’ capability. However, for the latest version, it seems you need the ‘browserName’ capability for tests to be executed on BrowserStack. This is something that is implemented by Protractor framework, while running its tests.
+`export BROWSERSTACK_USERNAME=<browserstack-username>`
 
+`export BROWSERSTACK_KEY=<browserstack-access-key>`
+
+#### To execute Protractor test on a single browser - OS combination
+
+Execute the following command:
+
+`protractor Simple\ Testing/conf.js`
+
+#### To execute Protractor test on a multiple browser - OS combinations
+
+To execute the test on differnt browser and OS combinations in parallel,
+you need to use `'multiCapabilities'` as given in conf.js file.
+Then simply execute the command:
+
+`protractor Parallel\ Testing/conf.js`
+
+### How to specify the capabilities
+
+The [Code Generator](https://www.browserstack.com/automate/node#setting-os-and-browser) can come in very handy when specifying the capabilities especially for mobile devices.
+
+The latest version of protractor needs the ‘browserName’ capability mentioned for tests to be executed.
