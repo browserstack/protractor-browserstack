@@ -10,5 +10,6 @@ exports.config = {
     browserName: 'Chrome'
   },
   seleniumAddress: 'http://hub.browserstack.com/wd/hub',
-  specs: ['spec.js']
+  //seleniumAddress: 'http://localhost:4444/wd/hub',
+  specs: ['tests/spec.js']
 };

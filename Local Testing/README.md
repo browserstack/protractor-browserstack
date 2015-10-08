@@ -4,12 +4,6 @@
 
 Node and npm
 
-### Clone this repo
-
-`git clone https://github.com/vedharish/protractor-browserstack.git`
-
-`cd protractor-browserstack`
-
 ### Install protractor
 
 `npm install -g protractor`
@@ -25,10 +19,20 @@ These can be found on the automate accounts page on [BrowserStack](https://www.b
 
 ### Setting up local tunnel
 
-Download the BrowserStackLocal Binary as instructed [here](https://www.browserstack.com/automate/node#setting-local-tunnel). Run the binary locally.
+Download the BrowserStackLocal Binary as instructed [here](https://www.browserstack.com/automate/node#setting-local-tunnel).
+Keep the tunnel running locally.
 
 `path/to/BrowserStackLocal $BROWSERSTACK_KEY localhost,3000,0`
 
+### Serve the html files
+
+Run a local server which will serve the html files in `app` directory on localhost port 8000 for testing.
+A simple way to do this is to run a simple python server locally.
+
+`cd app/ && python -m SimpleHTTPServer'
+
 ### Run tests
+
+In the `Local Testing` folder, run
 
 `protractor conf.js`
