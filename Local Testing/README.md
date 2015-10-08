@@ -4,6 +4,8 @@
 
 Node and npm
 
+[Latest `protractor` release requires node v0.12 and up](https://github.com/angular/protractor/issues/2588)
+
 ### Install protractor
 
 `npm install -g protractor`
@@ -24,12 +26,16 @@ Keep the tunnel running locally.
 
 `path/to/BrowserStackLocal $BROWSERSTACK_KEY localhost,3000,0`
 
+### Clone the repo
+
+`git clone https://github.com/browserstack/protractor-browserstack.git`
+
 ### Serve the html files
 
 Run a local server which will serve the html files in `app` directory on localhost port 8000 for testing.
 A simple way to do this is to run a simple python server locally.
 
-`cd app/ && python -m SimpleHTTPServer'
+`cd app/ && python -m SimpleHTTPServer`
 
 ### Run tests
 
