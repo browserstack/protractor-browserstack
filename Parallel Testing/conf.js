@@ -9,7 +9,9 @@ exports.config = {
         os: 'Windows',
         os_version: '8.1',
         resolution: '1024x768',
+
         build: 'Sample Protractor Tests',
+        name: 'Sample Parallel Protractor tests',
 
         'browserstack.debug': 'true',
         'browserstack.user': process.env.BROWSERSTACK_USERNAME,
@@ -21,7 +23,9 @@ exports.config = {
         os: 'OS X',
         os_version: 'Yosemite',
         resolution: '1024x768',
+
         build: 'Sample Protractor Tests',
+        name: 'Sample Parallel Protractor tests',
 
         'browserstack.debug': 'true',
         'browserstack.user': process.env.BROWSERSTACK_USERNAME,
@@ -33,7 +37,9 @@ exports.config = {
         os: 'Windows',
         os_version: '7',
         resolution: '1024x768',
+
         build: 'Sample Protractor Tests',
+        name: 'Sample Parallel Protractor tests',
 
         'browserstack.debug': 'true',
         'browserstack.user': process.env.BROWSERSTACK_USERNAME,
@@ -43,7 +49,9 @@ exports.config = {
         browserName: 'iPhone',
         platform: 'MAC',
         device: 'iPhone 5S',
+
         build: 'Sample Protractor Tests',
+        name: 'Sample Parallel Protractor tests',
 
         'browserstack.debug': 'true',
         'browserstack.user': process.env.BROWSERSTACK_USERNAME,
