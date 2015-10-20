@@ -1,0 +1,20 @@
+{
+  "name": "protractor-browserstack-live-testing",
+  "version": "1.0.0",
+  "readme": "Live Protractor tests on [BrowserStack](https://www.browserstack.com)",
+  "description": "An example module to run protractor tests on browserstack",
+  "scripts": {
+    "start": "node ./scripts/server.js",
+    "test": "node ./scripts/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/browserstack/protractor-browserstack"
+  },
+  "dependencies": {
+    "browserstacktunnel-wrapper": "^1.4.0",
+    "express": "^4.13.3",
+    "protractor": "^2.5.1"
+  },
+  "license": "MIT"
+}

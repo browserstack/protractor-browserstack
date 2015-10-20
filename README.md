@@ -4,23 +4,19 @@ Execute [Protractor](https://github.com/angular/protractor) scripts on BrowserSt
 
 ## Usage
 
-For local testing, follow the instructions in `Local Testing/README`
-
 ### Prerequisites
 
 Node and npm
-
-[Latest `protractor` release requires node v0.12 and up](https://github.com/angular/protractor/issues/2588)
-
-### Install protractor
-
-`npm install -g protractor`
 
 ### Clone the repo
 
 `git clone https://github.com/browserstack/protractor-browserstack.git`
 
-`cd protractor-browserstack`
+### Install dependencies
+
+Navigate to appropriate directory for testing and then install the dependencies by running
+
+`npm install`
 
 ### BrowserSack Authentication
 
@@ -31,19 +27,16 @@ These can be found on the automate accounts page on [BrowserStack](https://www.b
 
 `export BROWSERSTACK_KEY=<browserstack-access-key>`
 
-#### To execute Protractor test on a single browser - OS combination
+#### Run the tests
 
-Execute the following command:
+Local Testing requires a locally serving html server. The sample server can be started by executing
 
-`protractor Simple\ Testing/conf.js`
+`npm start` in the `Local Testing` directory
 
-#### To execute Protractor test on a multiple browser - OS combinations
 
-To execute the test on differnt browser and OS combinations in parallel,
-you need to use `'multiCapabilities'` as given in conf.js file.
-Then simply execute the command:
+Execute the following command to run the tests:
 
-`protractor Parallel\ Testing/conf.js`
+`npm test`
 
 ### How to specify the capabilities
 
