@@ -1,6 +1,6 @@
 # Protractor-Browserstack
 
-Execute [Protractor](https://github.com/angular/protractor) scripts on BrowserStack. 
+Execute [Protractor](https://github.com/angular/protractor) scripts on BrowserStack.
 
 ## Usage
 
@@ -18,7 +18,7 @@ Navigate to appropriate directory for testing and then install the dependencies 
 
 `npm install`
 
-### BrowserSack Authentication
+### BrowserStack Authentication
 
 Export the environment variables for the username and access key of your BrowserStack account.
 These can be found on the automate accounts page on [BrowserStack](https://www.browserstack.com/accounts/automate)
@@ -27,7 +27,7 @@ These can be found on the automate accounts page on [BrowserStack](https://www.b
 
 `export BROWSERSTACK_KEY=<browserstack-access-key>`
 
-#### Run the tests
+### Run the tests
 
 Local Testing requires a locally serving html server. The sample server can be started by executing
 
@@ -38,7 +38,9 @@ Execute the following command to run the tests:
 
 `npm test`
 
-### How to specify the capabilities
+------
+
+#### How to specify the capabilities
 
 The [Code Generator](https://www.browserstack.com/automate/node#setting-os-and-browser) can come in very handy when specifying the capabilities especially for mobile devices.
 
