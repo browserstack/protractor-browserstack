@@ -14,7 +14,7 @@
   "dependencies": {
     "browserstacktunnel-wrapper": "^1.4.0",
     "express": "^4.13.3",
-    "protractor": "^2.5.1"
+    "protractor": "^3.0.0"
   },
   "license": "MIT"
 }

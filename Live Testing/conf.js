@@ -1,5 +1,4 @@
 exports.config = {
-  seleniumAddress: 'http://hub.browserstack.com/wd/hub',
   specs: ['spec.js'],
 
   capabilities: {
@@ -10,9 +9,9 @@ exports.config = {
     resolution: '1024x768',
 
     build: 'Sample Protractor Tests',
-    name: 'Sample Live Protractor Tests',
+    name: 'Sample Live Protractor Tests'
+  },
 
-    'browserstack.user': process.env.BROWSERSTACK_USERNAME,
-    'browserstack.key': process.env.BROWSERSTACK_KEY
-  }
+  browserstackUser: process.env.BROWSERSTACK_USERNAME,
+  browserstackKey: process.env.BROWSERSTACK_KEY
 };
