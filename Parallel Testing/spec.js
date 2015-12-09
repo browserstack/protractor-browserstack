@@ -9,5 +9,8 @@ describe('search', function() {
         browser.sleep(5000);
         browser.takeScreenshot();
       });
+    browser.driver.getTitle().then(function(page_title) {
+      expect(page_title.split('-')[0].trim()).toEqual('BrowserStack');
+    });
   });
 });

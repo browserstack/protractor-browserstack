@@ -1,5 +1,6 @@
 exports.config = {
-  seleniumAddress: 'http://hub.browserstack.com/wd/hub',
+  browserstackUser: process.env.BROWSERSTACK_USERNAME,
+  browserstackKey: process.env.BROWSERSTACK_KEY,
   specs: ['spec.js'],
 
   multiCapabilities: [
@@ -13,9 +14,7 @@ exports.config = {
         build: 'Sample Protractor Tests',
         name: 'Sample Parallel Protractor tests',
 
-        'browserstack.debug': 'true',
-        'browserstack.user': process.env.BROWSERSTACK_USERNAME,
-        'browserstack.key': process.env.BROWSERSTACK_KEY
+        'browserstack.debug': 'true'
     },
     {
         browserName: 'Safari',
@@ -27,9 +26,7 @@ exports.config = {
         build: 'Sample Protractor Tests',
         name: 'Sample Parallel Protractor tests',
 
-        'browserstack.debug': 'true',
-        'browserstack.user': process.env.BROWSERSTACK_USERNAME,
-        'browserstack.key': process.env.BROWSERSTACK_KEY
+        'browserstack.debug': 'true'
     },
     {
         browserName: 'Firefox',
@@ -41,9 +38,7 @@ exports.config = {
         build: 'Sample Protractor Tests',
         name: 'Sample Parallel Protractor tests',
 
-        'browserstack.debug': 'true',
-        'browserstack.user': process.env.BROWSERSTACK_USERNAME,
-        'browserstack.key': process.env.BROWSERSTACK_KEY
+        'browserstack.debug': 'true'
     },
     {
         browserName: 'iPhone',
@@ -53,9 +48,7 @@ exports.config = {
         build: 'Sample Protractor Tests',
         name: 'Sample Parallel Protractor tests',
 
-        'browserstack.debug': 'true',
-        'browserstack.user': process.env.BROWSERSTACK_USERNAME,
-        'browserstack.key': process.env.BROWSERSTACK_KEY
+        'browserstack.debug': 'true'
     }
   ]
 };
