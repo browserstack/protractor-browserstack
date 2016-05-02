@@ -1,19 +1,20 @@
 {
-  "name": "protractor-browserstack-live-testing",
-  "version": "1.0.0",
+  "name": "protractor-browserstack",
+  "version": "0.1.0",
   "readme": "Live Protractor tests on [BrowserStack](https://www.browserstack.com)",
   "description": "An example module to run protractor tests on browserstack",
   "scripts": {
-    "start": "node ./scripts/server.js",
-    "test": "node ./scripts/test.js"
+    "test": "./node_modules/.bin/protractor conf_single.js",
+    "test_local": "node ./scripts/test_local.js",
+    "test_single": "./node_modules/.bin/protractor conf_single.js",
+    "test_parallel": "./node_modules/.bin/protractor conf_parallel.js"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/browserstack/protractor-browserstack"
   },
   "dependencies": {
-    "browserstacktunnel-wrapper": "^1.4.0",
-    "express": "^4.13.3",
+    "browserstack-local": "^0.1.0",
     "protractor": "^2.5.1"
   },
   "license": "MIT"

@@ -1,6 +1,6 @@
 exports.config = {
   seleniumAddress: 'http://hub.browserstack.com/wd/hub',
-  specs: ['spec.js'],
+  specs: ['specs/spec.js'],
 
   capabilities: {
     browserName: 'Safari',
