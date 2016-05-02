@@ -29,14 +29,9 @@ These can be found on the automate accounts page on [BrowserStack](https://www.b
 
 ### Run the tests
 
-Local Testing requires a locally serving html server. The sample server can be started by executing
-
-`npm start` in the `Local Testing` directory
-
-
-Execute the following command to run the tests:
-
-`npm test`
+ - To start a single test run: `npm test` or `npm run test_single`
+ - To start parallel tests run: `npm run test_parallel`
+ - To start local tests run: `npm run test_local`
 
 ------
 
