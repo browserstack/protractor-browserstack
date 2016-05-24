@@ -4,7 +4,7 @@ exports.config = {
 
   capabilities: {
     'browserstack.user': process.env.BROWSERSTACK_USERNAME,
-    'browserstack.key': process.env.BROWSERSTACK_KEY,
+    'browserstack.key': process.env.BROWSERSTACK_ACCESS_KEY,
 
     build: 'Sample Protractor Tests',
     name: 'Sample Protractor Local Testing',

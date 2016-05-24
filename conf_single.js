@@ -13,6 +13,6 @@ exports.config = {
     name: 'Sample Live Protractor Tests',
 
     'browserstack.user': process.env.BROWSERSTACK_USERNAME,
-    'browserstack.key': process.env.BROWSERSTACK_KEY
+    'browserstack.key': process.env.BROWSERSTACK_ACCESS_KEY
   }
 };

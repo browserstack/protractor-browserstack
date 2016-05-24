@@ -15,7 +15,7 @@ exports.config = {
 
         'browserstack.debug': 'true',
         'browserstack.user': process.env.BROWSERSTACK_USERNAME,
-        'browserstack.key': process.env.BROWSERSTACK_KEY
+        'browserstack.key': process.env.BROWSERSTACK_ACCESS_KEY
     },
     {
         browserName: 'Safari',
@@ -29,7 +29,7 @@ exports.config = {
 
         'browserstack.debug': 'true',
         'browserstack.user': process.env.BROWSERSTACK_USERNAME,
-        'browserstack.key': process.env.BROWSERSTACK_KEY
+        'browserstack.key': process.env.BROWSERSTACK_ACCESS_KEY
     },
     {
         browserName: 'Firefox',
@@ -43,7 +43,7 @@ exports.config = {
 
         'browserstack.debug': 'true',
         'browserstack.user': process.env.BROWSERSTACK_USERNAME,
-        'browserstack.key': process.env.BROWSERSTACK_KEY
+        'browserstack.key': process.env.BROWSERSTACK_ACCESS_KEY
     },
     {
         browserName: 'iPhone',
@@ -55,7 +55,7 @@ exports.config = {
 
         'browserstack.debug': 'true',
         'browserstack.user': process.env.BROWSERSTACK_USERNAME,
-        'browserstack.key': process.env.BROWSERSTACK_KEY
+        'browserstack.key': process.env.BROWSERSTACK_ACCESS_KEY
     }
   ]
 };
