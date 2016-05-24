@@ -25,7 +25,7 @@ These can be found on the automate accounts page on [BrowserStack](https://www.b
 
 `export BROWSERSTACK_USERNAME=<browserstack-username>`
 
-`export BROWSERSTACK_KEY=<browserstack-access-key>`
+`export BROWSERSTACK_ACCESS_KEY=<browserstack-access-key>`
 
 ### Run the tests
 
