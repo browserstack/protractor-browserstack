@@ -1,6 +1,6 @@
 exports.config = {
   'specs': [ 'specs/single.js' ],
-  'seleniumAddress': 'http://hub.browserstack.com/wd/hub',
+  'seleniumAddress': 'http://hub-cloud.browserstack.com/wd/hub',
 
   'commonCapabilities': {
     'browserstack.user': process.env.BROWSERSTACK_USERNAME || 'BROWSERSTACK_USERNAME',
