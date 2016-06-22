@@ -6,7 +6,7 @@
 
 - Clone the repo
 - Install dependencies `npm install`
-- Update `config.json` with your BrowserStack credentials `user` and `key`
+- Update `conf_*.js` with your BrowserStack credentials `user` and `key`
 
 ### Run the tests
 
