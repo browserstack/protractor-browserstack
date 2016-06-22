@@ -1,18 +1,14 @@
 exports.config = {
-  seleniumAddress: 'http://hub.browserstack.com/wd/hub',
-  specs: ['specs/spec.js'],
+  'specs': [ 'specs/single.js' ],
+  'seleniumAddress': 'http://hub.browserstack.com/wd/hub',
 
-  capabilities: {
-    browserName: 'Safari',
-    browser_version: '8.0',
-    os: 'OS X',
-    os_version: 'Yosemite',
-    resolution: '1024x768',
-
-    build: 'Sample Protractor Tests',
-    name: 'Sample Live Protractor Tests',
-
+  'capabilities': {
     'browserstack.user': process.env.BROWSERSTACK_USERNAME,
-    'browserstack.key': process.env.BROWSERSTACK_ACCESS_KEY
+    'browserstack.key': process.env.BROWSERSTACK_ACCESS_KEY,
+    'build': 'protractor-browserstack',
+    'name': 'single_test',
+    'browserName': 'chrome',
+    'resolution': '1024x768',
+    'browserstack.debug': 'true'
   }
 };
