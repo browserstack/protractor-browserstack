@@ -7,7 +7,8 @@ exports.config = {
     'browserstack.key': process.env.BROWSERSTACK_ACCESS_KEY || 'BROWSERSTACK_ACCESS_KEY',
     'build': 'protractor-browserstack',
     'name': 'parallel_test',
-    'browserstack.debug': 'true'
+    'browserstack.debug': 'true',
+    'browserName': 'Chrome'
   },
 
   'multiCapabilities': [{
@@ -21,6 +22,7 @@ exports.config = {
   }]
 };
 
+// Code to support common capabilities
 exports.config.multiCapabilities.forEach(function(caps){
-  for(var i in exports.config.commonCapabilities) caps[i] = exports.config.commonCapabilities[i];
+  for(var i in exports.config.commonCapabilities) caps[i] = caps[i] || exports.config.commonCapabilities[i];
 });
