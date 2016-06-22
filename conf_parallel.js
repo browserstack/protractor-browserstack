@@ -2,33 +2,25 @@ exports.config = {
   'specs': [ 'specs/single.js' ],
   'seleniumAddress': 'http://hub.browserstack.com/wd/hub',
 
+  'commonCapabilities': {
+    'browserstack.user': process.env.BROWSERSTACK_USERNAME,
+    'browserstack.key': process.env.BROWSERSTACK_ACCESS_KEY,
+    'build': 'protractor-browserstack',
+    'name': 'parallel_test',
+    'browserstack.debug': 'true'
+  },
+
   'multiCapabilities': [{
-    'browserName': 'Chrome',
-    'build': 'protractor-browserstack',
-    'name': 'parallel_test',
-    'browserstack.debug': 'true',
-    'browserstack.user': process.env.BROWSERSTACK_USERNAME,
-    'browserstack.key': process.env.BROWSERSTACK_ACCESS_KEY
+    'browserName': 'Chrome'
   },{
-    'browserName': 'Safari',
-    'build': 'protractor-browserstack',
-    'name': 'parallel_test',
-    'browserstack.debug': 'true',
-    'browserstack.user': process.env.BROWSERSTACK_USERNAME,
-    'browserstack.key': process.env.BROWSERSTACK_ACCESS_KEY
+    'browserName': 'Safari'
   },{
-    'browserName': 'Firefox',
-    'build': 'protractor-browserstack',
-    'name': 'parallel_test',
-    'browserstack.debug': 'true',
-    'browserstack.user': process.env.BROWSERSTACK_USERNAME,
-    'browserstack.key': process.env.BROWSERSTACK_ACCESS_KEY
+    'browserName': 'Firefox'
   },{
-    'browserName': 'IE',
-    'build': 'protractor-browserstack',
-    'name': 'parallel_test',
-    'browserstack.debug': 'true',
-    'browserstack.user': process.env.BROWSERSTACK_USERNAME,
-    'browserstack.key': process.env.BROWSERSTACK_ACCESS_KEY
+    'browserName': 'IE'
   }]
 };
+
+exports.config.multiCapabilities.forEach(function(caps){
+  for(var i in exports.config.commonCapabilities) caps[i] = exports.config.commonCapabilities[i];
+});
