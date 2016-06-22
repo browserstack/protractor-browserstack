@@ -1,13 +1,13 @@
 {
   "name": "protractor-browserstack",
   "version": "0.1.0",
-  "readme": "Live Protractor tests on [BrowserStack](https://www.browserstack.com)",
-  "description": "An example module to run protractor tests on browserstack",
+  "readme": "Protractor Integration with [BrowserStack](https://www.browserstack.com)",
+  "description": "Selenium examples for Protractor and BrowserStack Automate",
   "scripts": {
     "test": "./node_modules/.bin/protractor conf_single.js",
-    "test_local": "node ./scripts/test_local.js",
-    "test_single": "./node_modules/.bin/protractor conf_single.js",
-    "test_parallel": "./node_modules/.bin/protractor conf_parallel.js"
+    "local": "node ./scripts/test_local.js",
+    "single": "./node_modules/.bin/protractor conf_single.js",
+    "parallel": "./node_modules/.bin/protractor conf_parallel.js"
   },
   "repository": {
     "type": "git",
