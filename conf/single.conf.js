@@ -1,5 +1,5 @@
 exports.config = {
-  'specs': [ 'specs/single.js' ],
+  'specs': [ '../specs/single.js' ],
   'seleniumAddress': 'http://hub-cloud.browserstack.com/wd/hub',
 
   'capabilities': {

@@ -5,9 +5,9 @@
   "description": "Selenium examples for Protractor and BrowserStack Automate",
   "scripts": {
     "test": "npm run single && npm run local && npm run parallel",
-    "single": "./node_modules/.bin/protractor conf_single.js",
-    "local": "./node_modules/.bin/protractor conf_local.js",
-    "parallel": "./node_modules/.bin/protractor conf_parallel.js"
+    "single": "./node_modules/.bin/protractor conf/single.conf.js",
+    "local": "./node_modules/.bin/protractor conf/local.conf.js",
+    "parallel": "./node_modules/.bin/protractor conf/parallel.conf.js"
   },
   "repository": {
     "type": "git",
