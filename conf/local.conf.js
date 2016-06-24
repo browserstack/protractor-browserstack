@@ -14,6 +14,7 @@ exports.config = {
     'browserstack.debug': 'true'
   },
 
+  // Code to start browserstack local before start of test
   beforeLaunch: function(){
     console.log("Connecting local");
     return new Promise(function(resolve, reject){
@@ -27,6 +28,7 @@ exports.config = {
     });
   },
 
+  // Code to stop browserstack local after end of test
   onComplete: function(){
     return new Promise(function(resolve, reject){
       exports.bs_local.stop(resolve);
