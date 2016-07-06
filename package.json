@@ -14,7 +14,7 @@
     "url": "https://github.com/browserstack/protractor-browserstack"
   },
   "dependencies": {
-    "browserstack-local": "^0.1.0",
+    "browserstack-local": "^1.0.0",
     "protractor": "^2.5.1"
   },
   "license": "MIT"
