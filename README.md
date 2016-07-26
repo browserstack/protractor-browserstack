@@ -1,42 +1,35 @@
-# Protractor-Browserstack
+# protractor-browserstack
 
-Execute [Protractor](https://github.com/angular/protractor) scripts on BrowserStack.
+[Protractor](https://github.com/angular/protractor/) Integration with BrowserStack.
 
-## Usage
+![BrowserStack Logo](https://d98b8t1nnulk5.cloudfront.net/production/images/layout/logo-header.png?1469004780)
 
-### Prerequisites
+<img src ="http://nchaulet.github.io/slide-protractor-lyonjs/images/protractor-logo.png" height = "100">
 
-Node and npm
+## Setup
 
-### Clone the repo
+* Clone the repo
+* Install dependencies `npm install`
+* Update `*.conf.js` files inside the `conf/` directory with your [BrowserStack Username and Access Key](https://www.browserstack.com/accounts/settings)
 
-`git clone https://github.com/browserstack/protractor-browserstack.git`
+## Running your tests
+* To run a single test, run `npm run single`
+* To run parallel tests, run `npm run parallel`
+* To run local tests, run `npm run local`
 
-### Install dependencies
 
-Navigate to appropriate directory for testing and then install the dependencies by running
-
-`npm install`
-
-### BrowserStack Authentication
-
-Export the environment variables for the username and access key of your BrowserStack account.
-These can be found on the automate accounts page on [BrowserStack](https://www.browserstack.com/accounts/automate)
-
-`export BROWSERSTACK_USERNAME=<browserstack-username>`
-
-`export BROWSERSTACK_ACCESS_KEY=<browserstack-access-key>`
-
-### Run the tests
-
- - To start a single test run: `npm test` or `npm run test_single`
- - To start parallel tests run: `npm run test_parallel`
- - To start local tests run: `npm run test_local`
-
-------
-
-#### How to specify the capabilities
-
-The [Code Generator](https://www.browserstack.com/automate/node#setting-os-and-browser) can come in very handy when specifying the capabilities especially for mobile devices.
-
-The latest version of protractor needs the ‘browserName’ capability mentioned for tests to be executed.
+## Notes
+* You can view your test results on the [BrowserStack automate dashboard](https://www.browserstack.com/automate)
+* To test on a different set of browsers, check out our [platform configurator](https://www.browserstack.com/automate/node#setting-os-and-browser)
+* You can export the environment variables for the Username and Access Key of your BrowserStack account
+  
+  ```
+  export BROWSERSTACK_USERNAME=<browserstack-username> &&
+  export BROWSERSTACK_ACCESS_KEY=<browserstack-access-key>
+  ```
+  
+## Additional Resources
+* [Documentation for writing automate test scripts in Node](https://www.browserstack.com/automate/node)
+* [Customizing your tests on BrowserStack](https://www.browserstack.com/automate/capabilities)
+* [Browsers & mobile devices for selenium testing on BrowserStack](https://www.browserstack.com/list-of-browsers-and-platforms?product=automate)
+* [Using REST API to access information about your tests via the command-line interface](https://www.browserstack.com/automate/rest-api)
