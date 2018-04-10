@@ -6,11 +6,15 @@ describe('Google\'s Search Functionality', function() {
           browser.driver.wait(function() {
             return browser.driver.findElements(by.id('resultStats')).then(function(elems) {
               return elems.length > 0;
-            });;
+            });
           });
           expect(browser.driver.getTitle()).toEqual('BrowserStack - Google Search');
         });
       });
     });
+  });
+
+  it('should fail and report to browserstack', function() {
+    expect(true).toBe(false);
   });
 });

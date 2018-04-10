@@ -1,5 +1,6 @@
 var browserstack = require('browserstack-local');
-
+console.log('process.env.BROWSERSTACK_USERNAME', process.env.BROWSERSTACK_USERNAME);
+console.log('process.env.BROWSERSTACK_ACCESS_KEY', process.env.BROWSERSTACK_ACCESS_KEY);
 exports.config = {
   'specs': [ '../specs/local.js' ],
   'seleniumAddress': 'http://hub-cloud.browserstack.com/wd/hub',
@@ -19,7 +20,7 @@ exports.config = {
     console.log("Connecting local");
     return new Promise(function(resolve, reject){
       exports.bs_local = new browserstack.Local();
-      exports.bs_local.start({'key': exports.config.capabilities['browserstack.key'] }, function(error) {
+      exports.bs_local.start({'key': exports.config.capabilities['browserstack.key'], force: true}, function (error) {
         if (error) return reject(error);
         console.log('Connected. Now testing...');
 
