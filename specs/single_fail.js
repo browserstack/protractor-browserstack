@@ -1,4 +1,4 @@
-var BrowserstackErrorLogger = require('../lib/BrowserstackErrorLogger');
+var BrowserstackErrorReporter = require('../lib/BrowserstackErrorReporter');
 
 jasmine.getEnv().addReporter({
   specStarted(result) {
@@ -11,7 +11,7 @@ jasmine.getEnv().addReporter({
 
 describe('Reporting to BrowserStack that test failed with reason', function() {
 
-  const reporter = new BrowserstackErrorLogger();
+  const reporter = new BrowserstackErrorReporter();
   beforeAll(async () => {
     await protractor.browser.driver.getSession().then((session) => {
       reporter.setSessionId(session['id_']);
@@ -21,7 +21,7 @@ describe('Reporting to BrowserStack that test failed with reason', function() {
   afterEach(function () {
     let failedExpectations = jasmine.getEnv().currentSpec.failedExpectations;
     if (failedExpectations.length) {
-      reporter.addError(failedExpectations[0].message, failedExpectations[0].stack)
+      failedExpectations.forEach(f => reporter.addError(f.message, f.stack));
     }
   });
 
