@@ -2,7 +2,7 @@ describe('Google\'s Search Functionality', function() {
   it('can find search results', function() {
     browser.driver.get('https://google.com/ncr').then(function() {
       browser.driver.findElement(by.name('q')).sendKeys('BrowserStack').then(function() {
-        browser.driver.findElement(by.name('btnG')).click().then(function() {
+        browser.actions().sendKeys(protractor.Key.ENTER).perform().then(function() {
           browser.driver.wait(function() {
             return browser.driver.findElements(by.id('resultStats')).then(function(elems) {
               return elems.length > 0;
@@ -12,9 +12,5 @@ describe('Google\'s Search Functionality', function() {
         });
       });
     });
-  });
-
-  it('should fail and report to browserstack', function() {
-    expect(true).toBe(false);
   });
 });
