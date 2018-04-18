@@ -1,6 +1,6 @@
 # protractor-browserstack with marking tests as passed/failed with reason 
 
-####The incentive behind this fork is to demonstrate how to mark tests as passed/ failed in browserstack. <br/>Browserstack's current documentation does not allow you to do so. So even if your test fails it will be marked as passed (green) on browserstack.<br/><br/>In addition, there is an example of how to update the reason for the test's failure using browserstack rest api. see 'single_failed.js'
+#### The incentive behind this fork is to demonstrate how to mark tests as passed/ failed in browserstack. <br/>Browserstack's current documentation does not allow you to do so. So even if your test fails it will be marked as passed (green) on browserstack.<br/><br/>In addition, there is an example of how to update the reason for the test's failure using browserstack rest api. see 'single_failed.js'
 
 [Protractor](https://github.com/angular/protractor/) Integration with BrowserStack.
 
