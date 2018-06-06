@@ -28,7 +28,8 @@
   export BROWSERSTACK_USERNAME=<browserstack-username> &&
   export BROWSERSTACK_ACCESS_KEY=<browserstack-access-key>
   ```
-  
+* Set browserstackUser and browserstackKey in config to automatically mark your test results, "completed" and "failed", on browserstack dashboard. [Sample config](conf/single.conf.js)
+
 ## Additional Resources
 * [Documentation for writing automate test scripts in Node](https://www.browserstack.com/automate/node)
 * [Customizing your tests on BrowserStack](https://www.browserstack.com/automate/capabilities)
