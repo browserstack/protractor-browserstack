@@ -2,8 +2,9 @@ var browserstack = require('browserstack-local');
 
 exports.config = {
   'specs': [ '../specs/local.js' ],
-  'seleniumAddress': 'http://hub-cloud.browserstack.com/wd/hub',
-
+  'browserstackUser': process.env.BROWSERSTACK_USERNAME || 'BROWSERSTACK_USERNAME',
+  'browserstackKey': process.env.BROWSERSTACK_ACCESS_KEY || 'BROWSERSTACK_ACCESS_KEY',
+  
   'commonCapabilities': {
     'browserstack.user': process.env.BROWSERSTACK_USERNAME || 'BROWSERSTACK_USERNAME',
     'browserstack.key': process.env.BROWSERSTACK_ACCESS_KEY || 'BROWSERSTACK_ACCESS_KEY',
