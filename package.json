@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "browserstack-local": "^1.0.0",
-    "protractor": "^2.5.1"
+    "protractor": "^5.3.2"
   },
   "license": "MIT"
 }
