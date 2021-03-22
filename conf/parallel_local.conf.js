@@ -6,7 +6,7 @@ exports.config = {
   'browserstackKey': process.env.BROWSERSTACK_ACCESS_KEY || 'BROWSERSTACK_ACCESS_KEY',
 
   'commonCapabilities': {
-    'build': 'protractor-browserstack',
+    'build': 'browserstack-build-1',
     'name': 'parallel_local_test',
     'browserstack.local': true,
     'browserstack.debug': 'true'
