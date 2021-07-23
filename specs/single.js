@@ -1,5 +1,3 @@
-const { browser, ExpectedConditions } = require("protractor");
-
 describe("Google's Search Functionality", function () {
   it("can find search results", async function () {
     await browser.driver.get("https://google.com/ncr");
