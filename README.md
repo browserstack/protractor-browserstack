@@ -8,7 +8,7 @@
 
 ---
 
-**Protractor is no longer supported by the Angular team. If you're looking for alternatives, here are our popular frameworks with migration guides:**
+**Protractor is no longer supported by the Angular team. If you're looking for alternatives, here are popular frameworks with migration guides:**
 
 - **Selenium based**
   - [Nightwatch](https://nightwatchjs.org/guide/migrating-to-nightwatch/from-protractor.html)
