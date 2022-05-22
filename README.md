@@ -1,10 +1,24 @@
-# protractor-browserstack
+# protractor-browserstack [deprecated]
 
 [Protractor](https://github.com/angular/protractor/) Integration with BrowserStack.
 
 ![BrowserStack Logo](https://d98b8t1nnulk5.cloudfront.net/production/images/layout/logo-header.png?1469004780)
 
 <img src ="http://nchaulet.github.io/slide-protractor-lyonjs/images/protractor-logo.png" height = "100">
+
+---
+
+**Protractor is no longer supported by the Angular team. If you're looking for alternatives, here are our popular frameworks with migration guides:**
+
+- **Selenium based**
+  - [Nightwatch](https://nightwatchjs.org/guide/migrating-to-nightwatch/from-protractor.html)
+  - [WebdriverIO](https://webdriver.io/docs/protractor-migration/)
+- **Other Frameworks**
+  - [Cypress](https://docs.cypress.io/guides/migrating-to-cypress/protractor)
+  - [Playwright](https://playwright.dev/docs/protractor)
+  - [TestCafe](https://testcafe.io/documentation/403554/recipes/migration/migrate-tests-from-protractor-to-testcafe)
+---
+
 
 ## Setup
 
